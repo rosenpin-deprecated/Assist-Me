@@ -1,0 +1,184 @@
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/back"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" android:clickable="false"
+    android:background="@drawable/siri_back">
+
+    <!-- As the main content view, the view below consumes the entire
+         space available using match_parent in both dimensions. -->
+    <FrameLayout
+            android:id="@+id/content_frame"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            />
+    <RelativeLayout
+        android:layout_below="@+id/layout_top"
+
+        android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:id="@id/back"
+            android:focusable="true"
+            android:visibility="visible"
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:focusableInTouchMode="true">
+    <RelativeLayout
+        android:visibility="invisible"
+        android:layout_width="match_parent"
+        android:layout_height="220dp"
+        style="@style/nowCardStyle"
+        android:id="@+id/one"
+        android:layout_below="@+id/scroller"
+        android:layout_alignParentLeft="false">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="350dp"
+            style="@style/nowCardStyle"
+            android:id="@+id/weather_inner"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:textSize="30dp"
+                android:id="@+id/city"
+                android:textColor="#ff707070"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true" />
+
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/info_image"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@+id/city"
+                android:layout_alignParentLeft="true"
+                android:layout_marginRight="150dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:id="@+id/info_one"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:textSize="45dp"
+                android:textColor="#ff707070" />
+
+
+        </RelativeLayout>
+        </RelativeLayout>
+
+        <ScrollView
+            android:layout_width="fill_parent"
+            android:id="@+id/scroller"
+            android:layout_height="220dp">
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:orientation="vertical"
+                android:layout_height="220dp" android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true" android:id="@+id/textScroller">
+
+            </LinearLayout>
+        </ScrollView>
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/mail"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:hint="@string/edit"
+            android:layout_alignParentRight="true" android:visibility="invisible"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="New Button"
+            android:id="@+id/button"
+            android:visibility="invisible"
+            android:layout_above="@+id/one"
+            android:layout_centerHorizontal="true" />
+
+        <FrameLayout
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_alignParentBottom="true"
+
+            android:layout_alignParentRight="true"
+            android:id="@+id/frameLayout"
+            android:layout_alignParentLeft="true">
+            <ImageButton
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:id="@+id/imageButtonbackground"
+                android:background="@drawable/icon"
+                android:layout_gravity="center"
+                android:clickable="false"
+                android:focusable="false"
+                />
+            <ImageButton
+                android:layout_width="91dp"
+                android:layout_height="91dp"
+                android:id="@+id/imageButton"
+                android:layout_gravity="center"
+                android:layout_weight="0.19"
+
+                android:background="@drawable/icon"
+
+                android:clickable="false"
+                android:focusable="false"
+                />
+
+        </FrameLayout>
+
+    </RelativeLayout>
+    <!-- android:layout_gravity="start" tells DrawerLayout to treat
+         this as a sliding drawer on the left side for left-to-right
+         languages and on the right side for right-to-left languages.
+         The drawer is given a fixed width in dp and extends the full height of
+         the container. A solid background is used for contrast
+         with the content view. -->
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/layout_top">
+
+        <FrameLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/actionbar_back">
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="7dp"
+                android:text="@string/app_name"
+                android:gravity="center|center_vertical|center_horizontal"
+                android:textSize="24sp"
+                android:textColor="#999999"
+                android:layout_gravity="center"
+                android:id="@+id/action_bar_title" />
+
+            <com.RippleButton.SmartButton
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+                android:background="@drawable/title_bar_menu_on"
+                android:id="@+id/title_bar_left_menu"
+                android:layout_gravity="left|center_vertical"
+                android:layout_marginLeft="10dp"/>
+
+            <com.RippleButton.SmartButton
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+                android:background="@drawable/title_bar_menu_on"
+                android:id="@+id/title_bar_right_menu"
+                android:layout_gravity="right|center_vertical"
+                android:layout_marginRight="10dp"/>
+        </FrameLayout>
+    </LinearLayout>
+</RelativeLayout>

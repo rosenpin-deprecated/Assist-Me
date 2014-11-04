@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory
+        android:title="Advanced Settings">
+        <CheckBoxPreference
+            android:widgetLayout="@layout/custom_preferences_checkbox"
+            android:title="@string/notification"
+            android:summary="Disabling this will disable some features. Go to the main screen to apply changes"
+            android:defaultValue="false"
+            android:key="prefNotification"/>
+        <ListPreference android:title="What if I don't know"
+            android:summary="Assist-Me doesn't know everything,what would you like her to do if she doesn't understand you?"
+            android:key="prefUnknown"
+            android:defaultValue="Nothing"
+            android:entries="@array/unknown"
+            android:entryValues="@array/unknown_values"/>
+        <Preference
+            android:title="Reset to default"
+            android:summary="This will reset all Assist-Me data"
+            android:key="prefReset"
+            />
+    </PreferenceCategory>
+</PreferenceScreen>

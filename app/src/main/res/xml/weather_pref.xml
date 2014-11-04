@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="fill_parent"
+    android:layout_width="fill_parent">
+    <PreferenceCategory
+        android:title="Weather Settings">
+        <EditTextPreference
+            android:dialogMessage="Type the name of the city you want to get weather for."
+            android:title="Weather locations"
+            android:summary="Pick places for assist-me to show you weather for"
+            android:digits=" ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz"
+            android:capitalize="characters"
+            android:inputType="textCapCharacters|textCapWords|textCapSentences"
+            android:key="CardsWeatherLocation"/>
+    </PreferenceCategory>
+</PreferenceScreen>

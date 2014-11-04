@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+    <ImageView
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:id="@+id/hand"
+            android:layout_marginTop="40dp"
+            android:background="@drawable/high_res"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"/>
+    <com.RippleButton.SmartButton
+    android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Continue"
+            android:id="@+id/continue_first_screen"
+            android:layout_alignParentBottom="true" android:layout_centerHorizontal="true"
+            android:layout_marginBottom="37dp" android:background="@color/app_def" android:paddingLeft="30dp"
+            android:paddingRight="30dp"/>
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="@string/assist_me_is_ready"
+            android:id="@+id/textView2"
+        android:textSize="20dp"
+        android:layout_below="@+id/hand"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="49dp" />
+    <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/instructions_go"
+            android:id="@+id/go_through_instructions"
+        android:textSize="20dp"
+        android:layout_above="@+id/continue_first_screen"
+        android:layout_centerHorizontal="true" />
+</RelativeLayout>

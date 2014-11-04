@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <Preference
+        android:title="Pick custom color"
+        android:summary="Pick a custom color for Assist-Me"
+        android:key="prefColor"/>
+    <CheckBoxPreference
+        android:widgetLayout="@layout/custom_preferences_checkbox"
+        android:title="Animation"
+        android:summary="Custom animation, overriding default animations"
+        android:key="prefAnimations"
+        android:defaultValue="true"
+        />
+    <CheckBoxPreference
+        android:widgetLayout="@layout/custom_preferences_checkbox"
+        android:title="Siri Look Alike"
+        android:defaultValue="false"
+        android:summary="Make Assist-Me look like siri"
+        android:key="prefSiri"/>
+  <!--  <CheckBoxPreference
+        android:widgetLayout="@layout/custom_preferences_checkbox"
+        android:title="Show mini popup window"
+        android:defaultValue="false"
+        android:summary="Make Assist-Me pop out to a mini icon so it can Assist-You when you need it"
+        android:key="prefTooLeap"/>-->
+</PreferenceScreen>

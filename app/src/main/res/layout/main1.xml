@@ -1,0 +1,189 @@
+<RelativeLayout
+xmlns:android="http://schemas.android.com/apk/res/android"
+android:layout_width="fill_parent"
+android:layout_height="match_parent"
+    xmlns:ads="http://schemas.android.com/apk/lib/com.google.ads"
+    android:id="@+id/back"
+    xmlns:tools="http://schemas.android.com/tools"
+android:focusableInTouchMode="true"
+    tools:context=".Main1"
+android:background="#fffff9">
+    <LinearLayout
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:id="@+id/adLayout"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent">
+
+
+    </LinearLayout>
+<RelativeLayout
+    android:layout_above="@id/adLayout"
+    android:orientation="vertical"
+    android:id="@+id/all"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+<RelativeLayout
+    android:visibility="invisible"
+    android:layout_width="match_parent"
+    android:layout_height="150dp"
+    style="@style/nowCardStyle"
+    android:id="@+id/one"
+    android:layout_alignParentLeft="false"
+    android:layout_above="@+id/mail"
+    android:padding="0dp">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        style="@style/nowCardStyle"
+        android:id="@+id/weather_inner"
+        android:layout_alignParentTop="false"
+        android:layout_alignParentRight="false">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:textSize="30dp"
+            android:id="@+id/city"
+            android:textColor="#ff707070"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true" />
+
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/info_image"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/city"
+            android:layout_alignParentLeft="true"
+            android:layout_marginRight="150dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:id="@+id/info_one"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:textSize="45dp"
+            android:textColor="#ff707070" />
+
+
+    </RelativeLayout>
+</RelativeLayout>
+
+<ScrollView
+    android:layout_below="@+id/layout_top"
+    android:layout_width="match_parent"
+    android:id="@+id/scroller"
+    android:layout_height="wrap_content"
+    android:layout_above="@+id/one">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="wrap_content"
+        android:id="@+id/textScroller">
+
+    </LinearLayout>
+</ScrollView>
+<FrameLayout
+    android:layout_width="100dp"
+    android:layout_height="100dp"
+    android:layout_alignParentBottom="true"
+
+    android:layout_alignParentRight="true"
+    android:id="@+id/frameLayout">
+    <ImageButton
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:id="@+id/imageButtonbackground"
+        android:background="@drawable/icon"
+        android:layout_gravity="center"
+        android:clickable="false"
+        android:focusable="false"
+        />
+<ImageButton
+    android:layout_width="91dp"
+    android:layout_height="91dp"
+    android:id="@+id/imageButton"
+    android:layout_gravity="center"
+    android:layout_weight="0.19"
+
+    android:background="@drawable/icon"
+
+    android:clickable="false"
+    android:focusable="false"
+     />
+
+</FrameLayout>
+<EditText
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/mail"
+    android:layout_alignParentBottom="true"
+
+    android:layout_alignParentLeft="true"
+    android:imeOptions="actionDone"
+    android:inputType="text"
+    android:hint="@string/edit"
+    android:layout_toLeftOf="@+id/frameLayout" />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/layout_top"
+        android:baselineAligned="false">
+
+
+        <FrameLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/actionbar_back">
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="7dp"
+                android:text="@string/app_name"
+                android:gravity="center|center_vertical|center_horizontal"
+                android:textSize="24sp"
+                android:textColor="#999999"
+                android:layout_gravity="center"
+                android:id="@+id/action_bar_title" />
+
+            <com.RippleButton.SmartButton
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+                android:background="@drawable/title_bar_menu_on"
+                android:id="@+id/title_bar_left_menu"
+                android:layout_gravity="left|center_vertical"
+                android:layout_marginLeft="10dp"/>
+
+            <com.RippleButton.SmartButton
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+                android:background="@drawable/title_bar_menu_on"
+                android:id="@+id/title_bar_right_menu"
+                android:layout_gravity="right|center_vertical"
+                android:layout_marginRight="10dp"/>
+        </FrameLayout>
+
+    </LinearLayout>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="New Button"
+        android:id="@+id/puthandhere"
+        android:layout_marginTop="43dp"
+        android:layout_below="@+id/layout_top"
+        android:layout_centerHorizontal="true"
+        android:visibility="invisible" />
+
+</RelativeLayout>
+</RelativeLayout>

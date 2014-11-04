@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="banner_ad_unit_id">ca-app-pub-9332929961258846/5655147414</string>
+    <string name="reset_to_default">ברירת מחדל</string>
+    <string name="tempUnit">מה יחידת המידה המועדפת עליך</string>
+    <string name="listenOnStart">האזן בפתיחה</string>
+    <string name="pickLang">שפה</string>
+    <string name="notification">אפשר ריצה ברקע</string>
+    <string name="AppVersion">מספר גרסא</string>
+    <string name="weatherError">תקלה במזג אוויר</string>
+    <string name="answerAfterSpeak">ענה לי בקול רם</string>
+    <string name="greetMeOnStart">ברך אותי בפתיחה</string>
+    <string name="learn_from_you">הרשה לסייעי לי ללמוד ממך</string>
+    <string name="phoneNumber">מספר טלפון(לא חובה)</string>
+    <string name="email">אימייל (לא חובה)</string>
+    <string name="name">שם</string>
+    <string name="sports_toggle_init_card">מידע על ספורט (בקרוב)</string>
+    <string name="favorite_apps_toggle_init_card">רשימה של היישומים האהובים עלייך</string>
+    <string name="weather_info_card_init_toggle">מידע מזג אוויר</string>
+    <string name="init_card_two_title">בחר את האפשרויות לקבלת מידע עליהם.\n אל דאגה ניתן לשנות בהמשך.</string>
+    <string name="card_init_title">ברוכים הבאים לחלון הכרטיסים שלך.\n נשאל כמה שאלות כדי שנוכל לשרת אותך טוב יותר.\n לחץ המשך</string>
+    <string name="city_weather_title">רשום את שם העיר שלה תרצה לקבל עדכוני מזג אוויר</string>
+    <string name="city_weather">עיר לקבלת מזג אוויר</string>
+    <string name="Continue">המשך</string>
+    <string name="instructions_go">עבור למדריך</string>
+    <string name="assist_me_is_ready">סייעי לי מוכנה</string>
+    <string name="preferences">הגדרות</string>
+    <string name="text_input">הכנסת טקסט</string>
+    <string name="select">בחר שפה</string>
+    <string name="text">הקלדת פקודה</string>
+    <string name="app_name">סייע לי</string>
+    <string name="settings">הגדרות</string>
+    <string name="features">תכונות</string>
+    <string name="choose_color">בחר צבע</string>
+    <string name="alpha">הפוך לטסטר</string>
+    <string name="about">אודות</string>
+    <string name="appsettings">הגדרות אפליקציה</string>
+    <string name="colorful">צבעוני</string>
+    <string name="immersive">מסך מלא</string>
+    <string name="themes">ערכות נושא</string>
+    <string name="lang">שפות</string>
+    <string name="assistsettings">הגדרות עוזרת</string>
+    <string name="onstart">שלום בפתיחה</string>
+    <string name="answer">מענה לאחר דיבור</string>
+    <string name="assistname">שם עוזרת</string>
+    <string name="yourname">השם שלך</string>
+    <string name="image">בחר תמונה</string>
+    <string name="bitch">מצב אמאשך</string>
+    <string name="advanced">הגדרות מתקדמות</string>
+    <string name="widget_settings">הגדרות widget</string>
+    <string name="text_size">גודל גופן</string>
+    <string name="edittext">הקלד כאן</string>
+    <string name="answerinnewacitivty">ענה במסך חדש</string>
+    <string name="listenonstart">האזן בפתיחת האפליקציה</string>
+    <string name="edit">הקלד כאן</string>
+
+        <string name="open">פתח</string>
+        <string name="close">סגור</string>
+        <string name="publisherID">ca-app-pub-9332929961258846/4938527814</string>
+        <string name="admin_app">סייע לי</string>
+        <string name="admin_app_description">סייע לי</string>
+        <string name="pick">בחר שפה</string>
+
+        <string-array name="language">
+            <item>אנגלית</item>
+            <item>עברית</item>
+        </string-array>
+
+        <string-array name="language_values">
+            <item>english</item>
+            <item>hebrew</item>
+        </string-array>
+        <string-array name="unknown">
+            <item>כלום</item>
+            <item>חפש בוולפרם אלפא</item>
+            <item>חפש בגוגל</item>
+            <item>בקש מהמפתח להוסיף</item>
+        </string-array>
+
+        <string-array name="unknown_values">
+            <item>Nothing</item>
+            <item>Wolfram</item>
+            <item>Google</item>
+            <item>Feedback</item>
+        </string-array>
+        <string-array name="unit">
+            <item>צלזיוס</item>
+            <item>פרנהייט</item>
+        </string-array>
+
+        <string-array name="unit_values">
+            <item>Celsius</item>
+            <item>Fahrenheit</item>
+        </string-array>
+
+        <string-array name="accent">
+            <item>אמריקאי</item>
+            <item>אנגלי</item>
+        </string-array>
+
+        <string-array name="accent_values">
+            <item>US</item>
+            <item>UK</item>
+        </string-array>
+    </resources>

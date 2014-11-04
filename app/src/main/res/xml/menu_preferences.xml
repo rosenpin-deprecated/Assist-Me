@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <Preference
+        android:title="General"
+        android:key="prefGeneral"
+        />
+    <Preference
+        android:title="My assistant"
+        android:key="prefMyAssistant"
+        />
+    <Preference
+        android:title="Make it mine"
+        android:key="prefMine"/>
+    <Preference
+        android:title="Advanced"
+        android:key="prefAdvanced"/>
+    <Preference
+        android:title="About"
+        android:key="prefAbout"/>
+</PreferenceScreen>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+            android:showAsAction="always"
+            android:title="back"
+            android:id="@+id/back"
+            android:icon="@drawable/arrow_back"
+            />
+<item
+        android:showAsAction="always"
+        android:title="next"
+        android:id="@+id/next"
+        android:icon="@drawable/arrow"
+    />
+
+
+</menu>

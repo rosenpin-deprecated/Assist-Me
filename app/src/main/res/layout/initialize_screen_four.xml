@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="40dp"
+        android:layout_alignParentTop="true"
+        android:id="@+id/hand"
+        android:background="@drawable/high_res"
+        android:layout_marginBottom="40dp" android:layout_centerHorizontal="true"/>
+    <com.RippleButton.SmartButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Continue"
+        android:id="@+id/continue_first_screen"
+        android:layout_alignParentBottom="true" android:layout_centerHorizontal="true"
+        android:layout_marginBottom="37dp" android:background="@color/app_def" android:paddingLeft="30dp"
+        android:paddingRight="30dp"/>
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textCapSentences"
+        android:layout_above="@+id/email_address"
+        android:ems="10"
+        android:id="@+id/name"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"
+        android:hint="@string/name"/>
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textEmailAddress"
+        android:layout_above="@+id/phone_number"
+        android:ems="10"
+        android:id="@+id/email_address" android:layout_alignParentLeft="true"
+        android:layout_marginTop="34dp" android:hint="@string/email"/>
+    <EditText
+        android:layout_above="@+id/continue_first_screen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="phone"
+        android:ems="10"
+        android:id="@+id/phone_number" android:layout_alignParentLeft="true"
+        android:layout_marginTop="34dp" android:hint="@string/phoneNumber"/>
+</RelativeLayout>

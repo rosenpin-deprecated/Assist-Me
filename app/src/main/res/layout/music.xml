@@ -1,0 +1,23 @@
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <com.RippleButton.SmartButton
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:id="@+id/stop" android:layout_gravity="center_horizontal" android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true" android:background="@drawable/play_button"/>
+    <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/song_pic"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true" android:layout_above="@+id/stop"/>
+        <com.RippleButton.SmartButton
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:id="@+id/previous" android:layout_alignParentBottom="true"
+                android:background="@drawable/previous"
+                android:layout_below="@+id/song_pic"/>
+    </RelativeLayout>

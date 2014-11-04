@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merger version="2" >
+
+    <dataSet config="main" >
+        <source path="/home/tomer/Desktop/Assist Me/assist-me alpha updated /resideMenu/src/main/assets" />
+    </dataSet>
+    <dataSet config="debug" >
+        <source path="/home/tomer/Desktop/Assist Me/assist-me alpha updated /resideMenu/src/debug/assets" />
+    </dataSet>
+
+</merger>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merger version="2" >
+
+    <dataSet config="main" >
+        <source path="/home/tomer/Desktop/rosenpin-assist-me-alpha-e6d20fc87524/floatingMenu/src/androidTest/res" />
+        <source path="/home/tomer/Desktop/rosenpin-assist-me-alpha-e6d20fc87524/floatingMenu/build/generated/res/rs/test/debug" />
+        <source path="/home/tomer/Desktop/rosenpin-assist-me-alpha-e6d20fc87524/floatingMenu/build/generated/res/generated/test/debug" />
+    </dataSet>
+
+</merger>

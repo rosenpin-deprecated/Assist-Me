@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merger version="2" >
+
+    <dataSet config="20.0.0" >
+        <source path="/home/tomer/Desktop/rosenpin-assist-me-alpha-e6d20fc87524/floatingMenu/build/intermediates/exploded-aar/com.android.support/support-v4/20.0.0/assets" />
+    </dataSet>
+    <dataSet config="1.4" >
+        <source path="/home/tomer/Desktop/rosenpin-assist-me-alpha-e6d20fc87524/floatingMenu/build/intermediates/exploded-aar/com.larswerkman/HoloColorPicker/1.4/assets" />
+    </dataSet>
+    <dataSet config="main" >
+        <source path="/home/tomer/Desktop/rosenpin-assist-me-alpha-e6d20fc87524/floatingMenu/src/main/assets" />
+    </dataSet>
+    <dataSet config="debug" >
+        <source path="/home/tomer/Desktop/rosenpin-assist-me-alpha-e6d20fc87524/floatingMenu/src/debug/assets" />
+    </dataSet>
+
+</merger>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+xmlns:android="http://schemas.android.com/apk/res/android"
+android:layout_alignParentBottom="true"
+android:paddingTop="40dp"
+android:layout_width="match_parent"
+android:orientation="horizontal"
+android:layout_height="wrap_content">
+<com.RippleButton.SmartButton
+    android:layout_width="60dp"
+    android:background="@drawable/assist_config_icon"
+    android:layout_height="60dp" />
+<com.RippleButton.SmartButton
+    android:layout_width="60dp"
+    android:layout_height="60dp"
+    android:layout_alignParentRight="true"
+    android:id="@+id/settings"
+    android:background="@drawable/ic_action_settings"/>
+</RelativeLayout>

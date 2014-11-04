@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="wrap_content"
+    android:minWidth="400dp"
+    android:layout_height="200dp"
+    android:background="#ff73b3ff"
+    android:minHeight="200dp">
+
+    <RelativeLayout
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        android:background="@drawable/calander"
+        android:id="@+id/back">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="DAY"
+            android:id="@+id/day"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="16dp"
+            android:textColor="#ffffffff" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="00"
+            android:id="@+id/date"
+            android:layout_gravity="center_horizontal"
+            android:textColor="#E74C3C"
+            android:textSize="55dp"
+            android:gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/day"
+            android:layout_centerHorizontal="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="MONTH"
+            android:id="@+id/month"
+            android:layout_alignBottom="@+id/date"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="10dp"
+            android:textColor="#E74C3C" />
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/relativeLayout2">
+
+        <com.RippleButton.SmartButton
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:text="OK"
+
+            android:id="@+id/confirm"
+            android:background="#ffffffff"
+            android:textColor="#ffe74c3c"
+            android:textSize="30dp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="180dp"
+        android:layout_height="180dp"
+        android:layout_alignParentTop="false"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="false">
+
+        <TextView
+            android:textColor="#Ffffffff"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="BUY MILK ATasd ds sdf sdaf sdafsad fsad  ONE PM SEPTEMBER BIT4"
+            android:id="@+id/reminder"
+            android:maxLines="1"
+            android:textSize="35dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginRight="12dp"
+            android:layout_marginTop="26dp"
+            android:singleLine="true" />
+
+        <TextView
+            android:textColor="#Ffffffff"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="TIME"
+            android:id="@+id/time"
+            android:layout_gravity="center_horizontal"
+            android:textSize="25dp"
+            android:layout_below="@+id/reminder"
+            android:layout_alignLeft="@+id/reminder"
+            android:layout_alignStart="@+id/reminder" />
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          package="com.assist.me"
+          android:versionCode="95"
+          android:versionName="0.46.5 STABLE"
+    >
+    <supports-screens
+        android:smallScreens="true"
+        android:normalScreens="true"
+        android:largeScreens="true"
+        android:xlargeScreens="true"
+        android:anyDensity="true" />
+    <uses-feature android:name="android.hardware.camera" android:required="false" />
+    <uses-feature android:name="android.hardware.camera.autofocus" android:required="false" />
+    <uses-feature android:name="android.hardware.camera.flash" android:required="false" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.FLASHLIGHT" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name= "android.permission.SEND_SMS"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+   <!-- <uses-permission android:name="android.permission.BIND_REMOTEVIEWS permission"/>-->
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.RECORD_AUDIO"/>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.EXPAND_STATUS_BAR"/>
+    <uses-permission android:name="android.permission.CLEAR_APP_CACHE"/>
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN"/>
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="com.android.alarm.permission.SET_ALARM"/>
+    <uses-permission android:name="android.permission.READ_CALENDAR" />
+    <uses-permission android:name="android.permission.WRITE_CALENDAR" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permissio.MEDIA_CONTENT_CONTROL"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.RESTART_PACKAGES"/>
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.GET_TASKS"/>
+    <uses-permission android:name="android.permission.BLUETOOTH"/>
+    <uses-permission android:name="android.permission.GET_ACCOUNTS"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+
+
+    <uses-sdk
+        android:minSdkVersion="14"
+        android:targetSdkVersion="19" />
+    <application
+        android:icon="@drawable/ic_launcher"
+        android:logo="@drawable/ic_launcher"
+        android:screenOrientation="portrait"
+        android:label="@string/app_name"
+            >
+        <activity android:name="com.pin.assistme.weather_preferences"
+            android:theme="@android:style/Theme.DeviceDefault.Light"/>
+        <service android:name="com.pin.assistme.timer_service"/>
+
+        <service android:name="com.pin.assistme.always_on_service"/>
+        <service android:name="com.pin.assistme.VoiceService"/>
+
+        <!--preferences-->
+        <activity android:name="com.preferences.About"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.DeviceDefault.Light"
+            android:parentActivityName="com.preferences.preferencesMenu">
+            <meta-data android:name="android.support.UI_OPTIONS"
+                android:value="splitActionBarWhenNarrow" />
+        </activity>
+
+        <activity android:name="com.preferences.AdvancedPreferences"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.DeviceDefault.Light"
+            android:parentActivityName="com.preferences.preferencesMenu">
+            <meta-data android:name="android.support.UI_OPTIONS"
+                android:value="splitActionBarWhenNarrow" />
+        </activity>
+
+        <activity android:name="com.preferences.General"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.DeviceDefault.Light"
+            android:parentActivityName="com.preferences.preferencesMenu">
+            <meta-data android:name="android.support.UI_OPTIONS"
+                android:value="splitActionBarWhenNarrow" />
+        </activity>
+
+        <activity android:name="com.preferences.MakeItMine"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.DeviceDefault.Light"
+            android:parentActivityName="com.preferences.preferencesMenu">
+            <meta-data android:name="android.support.UI_OPTIONS"
+                android:value="splitActionBarWhenNarrow" />
+        </activity>
+
+        <activity android:name="com.preferences.MyAssitant"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.DeviceDefault.Light"
+            android:parentActivityName="com.preferences.preferencesMenu">
+            <meta-data android:name="android.support.UI_OPTIONS"
+                android:value="splitActionBarWhenNarrow" />
+        </activity>
+
+        <activity android:name="com.preferences.preferencesMenu"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.DeviceDefault.Light"
+            android:parentActivityName="com.pin.assistme.Main1">
+            <meta-data android:name="android.support.UI_OPTIONS"
+                android:value="splitActionBarWhenNarrow" />
+        </activity>
+
+
+        <!-- All the rest-->
+        <activity android:name="com.pin.assistme.instructions"
+                  android:theme="@style/tutorial_theme"
+                  android:screenOrientation="portrait"
+            android:parentActivityName="com.pin.assistme.Main1">
+            <meta-data android:name="android.support.UI_OPTIONS"
+                android:value="splitActionBarWhenNarrow" />
+        </activity>
+
+        <activity
+                 android:name="com.pin.assistme.music"/>
+        <activity android:name="com.pin.assistme.MultipleItemList"
+            android:theme="@android:style/Theme.DeviceDefault.Light.NoActionBar"
+            android:label=""
+            />
+        <activity android:name="com.pin.assistme.TimerActivity"
+            android:theme="@style/NoActionBarDialog"/>
+        <activity android:name="com.initializations.initOne"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.DeviceDefault.Light"/>
+        <activity android:name="com.initializations.initMain"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.DeviceDefault.Light.NoActionBar"/>
+        <activity android:name="com.pin.assistme.ColorPickerActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name="com.pin.assistme.Main1"
+            android:screenOrientation="sensorPortrait"
+            android:theme="@style/mainTheme"
+                  >
+            <meta-data android:name="com.android.systemui.action_assist_icon" android:resource="@drawable/ic_action_assist"/>
+            <meta-data android:name="com.android.systemui.action_assist_icon_google" android:resource="@drawable/ic_action_assist_google"/>
+            <intent-filter>
+                <action android:name="android.intent.action.ASSIST"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.pin.assistme.about"
+            android:icon="@drawable/ic_launcher"
+            android:theme="@android:style/Theme.DeviceDefault.Light.Dialog.NoActionBar"
+            android:screenOrientation="portrait"/>
+        <activity android:name="com.pin.assistme.features"
+            android:theme="@style/featuresTheme"
+            android:parentActivityName="com.pin.assistme.Main1">
+        <meta-data android:name="android.support.UI_OPTIONS"
+            android:value="splitActionBarWhenNarrow" />
+        </activity>
+        <service android:name="com.pin.assistme.services" android:label="Assist-Me">
+            <intent-filter>
+                <action android:name="com.myapp.MyService" />
+            </intent-filter>
+        </service>
+        <service android:name="com.pin.assistme.NotificationService"
+            android:label="Assist Me"
+            android:permission="android.permission.BIND_NOTIFICATION_LISTENER_SERVICE">
+            <intent-filter>
+                <action android:name="android.service.notification.NotificationListenerService" />
+            </intent-filter>
+        </service>
+
+
+        <receiver android:enabled="true" android:exported="true"
+                  android:name="com.pin.assistme.Broadcast"
+                  android:permission="android.permission.RECEIVE_BOOT_COMPLETED">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <action android:name="android.intent.action.QUICKBOOT_POWERON" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name="android.app.admin.DeviceAdminReceiver"
+                  android:label="@string/admin_app"
+                  android:description="@string/admin_app_description"
+                  android:permission="android.permission.BIND_DEVICE_ADMIN">
+            <meta-data android:name="android.app.device_admin"
+                       android:resource="@xml/device_admin_sample"/>
+            <intent-filter>
+                <action android:name="android.app.action.DEVICE_ADMIN_ENABLED" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.pin.assistme.MyWidgetProvider" >
+            <intent-filter >
+                <action
+                    android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/widget_info" />
+        </receiver>
+        <activity android:name="com.google.android.gms.ads.AdActivity" android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" />”
+        <meta-data android:name="com.google.android.gms.version" android:value="6111000" />
+<!--
+        <activity android:name="com.pin.assistme.TooLeapActivity"
+            android:theme="@style/tooleapTheme"
+            android:launchMode="singleInstance"
+            android:taskAffinity=".tooleap">
+            <meta-data android:name="com.tooleap.sdk.theme" android:resource="@android:style/Theme.Holo.Light"/>
+            <intent-filter>
+                <action android:name="com.tooleap.sdk.TOOLEAP_SHOW"/>
+            </intent-filter>
+        </activity>
+        <service android:name="com.tooleap.sdk.TooleapAppService"/>
+        <service android:name="com.tooleap.sdk.TooleapUIService"
+            android:process=":UIService"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.tooleap.sdk.BIND_UI_SERVICE" />
+            </intent-filter>
+        </service>
+        <receiver android:name="com.tooleap.sdk.TooleapReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_REPLACED"/>
+                <data android:scheme="package"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.tooleap.sdk.TOOLEAP_ACTION"/>
+            </intent-filter>
+        </receiver>
+        <meta-data android:name="com.tooleap.sdk.apiKey" android:value="5092C4AEDD5F5B73750" />
+-->
+    </application>
+</manifest>

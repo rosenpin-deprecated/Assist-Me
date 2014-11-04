@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_marginRight="5dp"
+    android:layout_marginLeft="5dp"
+    android:layout_height="match_parent">
+
+    <com.RippleButton.ObservableScrollView
+        android:layout_width="fill_parent"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="30dp"
+        android:id="@+id/scroller"
+        android:layout_height="fill_parent">
+        <LinearLayout
+            android:orientation="vertical"
+            android:id="@+id/features_back"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+        </LinearLayout>
+    </com.RippleButton.ObservableScrollView>
+</LinearLayout>

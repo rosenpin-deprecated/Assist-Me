@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@color/app_def"
+
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:textColor="@color/white"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/city_weather_title"
+        android:id="@+id/day"
+        android:gravity="center_horizontal"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="51dp" />
+
+    <com.RippleButton.SmartButton
+        android:textColor="@color/black"
+        android:paddingRight="30dp"
+        android:paddingLeft="30dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Continue"
+        android:background="@color/white"
+        android:id="@+id/puthandhere"
+        android:textStyle="italic"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="48dp" />
+
+    <EditText
+        android:textColorHint="#8cffffff"
+        android:textSize="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:digits="ABCDEFGHIJKLMNOPQRSTUVWXYZ - abcdefghijklmnopqrstuvwxyz"
+        android:id="@+id/mail"
+        android:hint="@string/city_weather"
+        android:paddingLeft="30dp"
+        android:paddingRight="30dp"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:focusableInTouchMode="true"
+        android:capitalize="characters"
+        android:inputType="textCapCharacters|textCapWords|textCapSentences" />
+
+</RelativeLayout>

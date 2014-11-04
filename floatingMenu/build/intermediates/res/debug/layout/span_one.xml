@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#2e85a6" >
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/span_1" />
+
+    </FrameLayout>
+
+</LinearLayout>
+<!-- From: file:/home/tomer/Desktop/rosenpin-assist-me-alpha-e6d20fc87524/floatingMenu/src/main/res/layout/span_one.xml -->

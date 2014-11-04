@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:id="@+id/one"
+android:gravity="center_horizontal"
+android:minHeight="200dp"
+android:minWidth="200dp"
+android:layout_below="@+id/time_status"
+android:layout_alignParentLeft="true"
+xmlns:android="http://schemas.android.com/apk/res/android" >
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    style="@style/nowCardStyle"
+    android:paddingBottom="40dp"
+    android:paddingTop="40dp"
+    android:paddingRight="25dp"
+    android:paddingLeft="25dp"
+    android:id="@+id/weather_inner">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:singleLine="true"
+        android:textSize="30dp"
+        android:text="CITY"
+        android:id="@+id/city"
+        android:textColor="#ff707070"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:id="@+id/info_one"
+        android:singleLine="true"
+        android:text="TEMP"
+        android:gravity="center_horizontal|center_vertical"
+        android:textSize="80dp"
+        android:textColor="#ff707070"
+        android:layout_below="@+id/exit1"
+        android:layout_alignParentRight="true"
+        android:layout_marginLeft="100dp" />
+
+    <Button
+        android:id="@+id/exit1"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:visibility="invisible"
+        android:background="@android:drawable/ic_delete"
+        android:layout_alignParentTop="true"
+        android:layout_alignRight="@+id/info_one" />
+
+    <ImageView
+        android:layout_below="@+id/city"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/info_image"
+        android:src="@drawable/sun"
+        android:layout_alignBottom="@+id/info_one"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="30dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="CONDITION"
+        android:id="@+id/info_two"
+        android:layout_below="@+id/info_image"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="45dp" />
+
+    <ImageView
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:id="@+id/hand3"
+        android:background="@drawable/humidity"
+        android:layout_below="@+id/info_two"
+        android:layout_alignParentLeft="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="HUMIDITY"
+        android:id="@+id/humidity"
+        android:layout_alignBottom="@+id/hand3"
+        android:layout_toRightOf="@+id/hand3" />
+
+    <ImageView
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:id="@+id/imageView3"
+        android:background="@drawable/wind_speed"
+        android:layout_below="@+id/hand3"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="10dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Wind speed"
+        android:id="@+id/wind_speed"
+        android:layout_alignBottom="@+id/imageView3"
+        android:layout_toRightOf="@+id/imageView3" />
+</RelativeLayout>
+</RelativeLayout>

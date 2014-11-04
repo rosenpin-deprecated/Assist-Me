@@ -1,0 +1,8 @@
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+ android:id="@+id/rowTextView" 
+ android:layout_width="fill_parent" 
+ android:layout_height="wrap_content"
+ android:padding="10dp"
+ android:textSize="16sp" >
+</TextView>
+<!-- From: file:/home/tomer/Desktop/rosenpin-assist-me-alpha-e6d20fc87524/floatingMenu/src/main/res/layout/list_item.xml -->

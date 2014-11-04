@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical"
+              android:background="#66FFFF"
+        >
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+   <RelativeLayout
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:paddingBottom="40dp" android:paddingTop="20dp">
+
+       <ImageView android:layout_width="220dp" android:layout_height="400dp"
+           android:background="@drawable/instructions_home" android:layout_gravity="center_horizontal"
+           android:layout_alignParentTop="true" android:layout_centerHorizontal="true" android:id="@+id/home"
+           />
+
+       <TextView
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:textAppearance="?android:attr/textAppearanceLarge"
+           android:text="Swipe left or right\n for options menu"
+           android:id="@+id/day" android:textSize="30dp"
+           android:textColor="#ff5ca2ff" android:layout_below="@+id/home"
+           android:layout_centerHorizontal="true"
+           android:gravity="center"
+           android:maxWidth="240dp" />
+
+       <ImageView
+           android:layout_width="100dp"
+           android:layout_height="50dp"
+           android:background="@drawable/arrow_back"
+           android:id="@+id/hand3"
+           android:layout_alignTop="@+id/hand"
+           android:layout_alignLeft="@+id/home" />
+
+       <ImageView
+           android:layout_width="100dp"
+           android:layout_height="50dp"
+           android:background="@drawable/arrow"
+           android:layout_alignTop="@+id/hand"
+           android:layout_alignRight="@+id/home"
+           android:id="@+id/imageView3" />
+
+       <ImageView
+           android:layout_width="100dp"
+           android:src="@drawable/hand"
+           android:layout_height="110dp"
+           android:layout_marginTop="144dp"
+           android:layout_alignParentTop="true"
+           android:layout_centerHorizontal="true"
+           android:id="@+id/hand" />
+
+
+
+    <ImageView android:layout_width="220dp" android:layout_height="400dp"
+        android:background="@drawable/instructions_home" android:layout_gravity="center_horizontal"
+        android:id="@+id/home2"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="536dp" />
+
+       <ImageView
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:background="@drawable/arrow_back"
+        android:id="@+id/imageView4"
+        android:rotation="270"
+        android:layout_alignBottom="@+id/hand2"
+        android:layout_alignLeft="@+id/hand" />
+
+       <ImageView
+           android:layout_width="100dp"
+           android:src="@drawable/hand"
+           android:layout_height="110dp"
+           android:id="@+id/hand2"
+           android:layout_alignTop="@+id/home2"
+
+           android:layout_alignLeft="@+id/imageView4"
+           android:layout_marginTop="25dp" />
+
+       <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Swipe down for cards screen"
+        android:textSize="30dp"
+        android:textColor="#ff5ca2ff"
+        android:maxWidth="220dp"
+        android:gravity="center"
+        android:layout_below="@+id/home2"
+        android:layout_centerHorizontal="true" />
+
+   </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- From: file:/home/tomer/Desktop/rosenpin-assist-me-alpha-e6d20fc87524/floatingMenu/src/main/res/values-sw720dp-land/dimens.xml -->
+    <eat-comment />
+
+    <dimen name="activity_horizontal_margin">128dp</dimen>
+
+</resources>

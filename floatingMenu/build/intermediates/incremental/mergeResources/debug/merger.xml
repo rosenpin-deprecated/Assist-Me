@@ -1,0 +1,306 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merger version="2" >
+
+    <dataSet config="20.0.0" >
+        <source path="/home/tomer/Desktop/rosenpin-assist-me-alpha-e6d20fc87524/floatingMenu/build/intermediates/exploded-aar/com.android.support/support-v4/20.0.0/res" />
+    </dataSet>
+    <dataSet config="1.4" >
+        <source path="/home/tomer/Desktop/rosenpin-assist-me-alpha-e6d20fc87524/floatingMenu/build/intermediates/exploded-aar/com.larswerkman/HoloColorPicker/1.4/res" >
+            <file
+                path="/home/tomer/Desktop/rosenpin-assist-me-alpha-e6d20fc87524/floatingMenu/build/intermediates/exploded-aar/com.larswerkman/HoloColorPicker/1.4/res/values/values.xml"
+                qualifiers="" >
+                <dimen name="color_center_halo_radius" >60dp
+                </dimen>
+                <dimen name="bar_pointer_halo_radius" >14dp
+                </dimen>
+
+                <declare-styleable name="ColorPicker" >
+                    <attr
+                        name="color_wheel_radius"
+                        format="dimension" />
+                    <attr
+                        name="color_wheel_thickness"
+                        format="dimension" />
+                    <attr
+                        name="color_center_radius"
+                        format="dimension" />
+                    <attr
+                        name="color_center_halo_radius"
+                        format="dimension" />
+                    <attr
+                        name="color_pointer_radius"
+                        format="dimension" />
+                    <attr
+                        name="color_pointer_halo_radius"
+                        format="dimension" />
+                </declare-styleable>
+
+                <dimen name="color_pointer_radius" >14dp
+                </dimen>
+                <dimen name="bar_length" >240dp
+                </dimen>
+
+                <declare-styleable name="ColorBars" >
+                    <attr
+                        name="bar_thickness"
+                        format="dimension" />
+                    <attr
+                        name="bar_length"
+                        format="dimension" />
+                    <attr
+                        name="bar_pointer_radius"
+                        format="dimension" />
+                    <attr
+                        name="bar_pointer_halo_radius"
+                        format="dimension" />
+                    <attr
+                        name="bar_orientation_horizontal"
+                        format="boolean" />
+                </declare-styleable>
+
+                <dimen name="bar_thickness" >4dp
+                </dimen>
+                <dimen name="color_wheel_thickness" >8dp
+                </dimen>
+                <dimen name="color_pointer_halo_radius" >18dp
+                </dimen>
+                <dimen name="bar_pointer_radius" >6dp
+                </dimen>
+                <dimen name="color_wheel_radius" >124dp
+                </dimen>
+                <dimen name="color_center_radius" >54dp
+                </dimen>
+            </file>
+        </source>
+    </dataSet>
+    <dataSet config="main" >
+        <source path="/home/tomer/Desktop/rosenpin-assist-me-alpha-e6d20fc87524/floatingMenu/src/main/res" >
+            <file
+                name="span_one"
+                path="/home/tomer/Desktop/rosenpin-assist-me-alpha-e6d20fc87524/floatingMenu/src/main/res/layout/span_one.xml"
+                qualifiers=""
+                type="layout" />
+            <file
+                name="popup"
+                path="/home/tomer/Desktop/rosenpin-assist-me-alpha-e6d20fc87524/floatingMenu/src/main/res/layout/popup.xml"
+                qualifiers=""
+                type="layout" />
+            <file
+                name="activity_launch"
+                path="/home/tomer/Desktop/rosenpin-assist-me-alpha-e6d20fc87524/floatingMenu/src/main/res/layout/activity_launch.xml"
+                qualifiers=""
+                type="layout" />
+            <file
+                name="activity_configurations"
+                path="/home/tomer/Desktop/rosenpin-assist-me-alpha-e6d20fc87524/floatingMenu/src/main/res/layout/activity_configurations.xml"
+                qualifiers=""
+                type="layout" />
+            <file
+                name="row"
+                path="/home/tomer/Desktop/rosenpin-assist-me-alpha-e6d20fc87524/floatingMenu/src/main/res/layout/row.xml"
+                qualifiers=""
+                type="layout" />
+            <file
+                name="span_two"
+                path="/home/tomer/Desktop/rosenpin-assist-me-alpha-e6d20fc87524/floatingMenu/src/main/res/layout/span_two.xml"
+                qualifiers=""
+                type="layout" />
+            <file
+                name="list_item"
+                path="/home/tomer/Desktop/rosenpin-assist-me-alpha-e6d20fc87524/floatingMenu/src/main/res/layout/list_item.xml"
+                qualifiers=""
+                type="layout" />
+            <file
+                name="activity_main"
+                path="/home/tomer/Desktop/rosenpin-assist-me-alpha-e6d20fc87524/floatingMenu/src/main/res/layout/activity_main.xml"
+                qualifiers=""
+                type="layout" />
+            <file
+                name="row_config"
+                path="/home/tomer/Desktop/rosenpin-assist-me-alpha-e6d20fc87524/floatingMenu/src/main/res/layout/row_config.xml"
+                qualifiers=""
+                type="layout" />
+            <file
+                name="list_item_config"
+                path="/home/tomer/Desktop/rosenpin-assist-me-alpha-e6d20fc87524/floatingMenu/src/main/res/layout/list_item_config.xml"
+                qualifiers=""
+                type="layout" />
+            <file
+                name="span_three"
+                path="/home/tomer/Desktop/rosenpin-assist-me-alpha-e6d20fc87524/floatingMenu/src/main/res/layout/span_three.xml"
+                qualifiers=""
+                type="layout" />
+            <file
+                name="span_2"
+                path="/home/tomer/Desktop/rosenpin-assist-me-alpha-e6d20fc87524/floatingMenu/src/main/res/drawable-ldpi/span_2.png"
+                qualifiers="ldpi-v4"
+                type="drawable" />
+            <file
+                name="span_1"
+                path="/home/tomer/Desktop/rosenpin-assist-me-alpha-e6d20fc87524/floatingMenu/src/main/res/drawable-ldpi/span_1.png"
+                qualifiers="ldpi-v4"
+                type="drawable" />
+            <file
+                name="span_3"
+                path="/home/tomer/Desktop/rosenpin-assist-me-alpha-e6d20fc87524/floatingMenu/src/main/res/drawable-ldpi/span_3.png"
+                qualifiers="ldpi-v4"
+                type="drawable" />
+            <file
+                name="span_2"
+                path="/home/tomer/Desktop/rosenpin-assist-me-alpha-e6d20fc87524/floatingMenu/src/main/res/drawable-mdpi/span_2.png"
+                qualifiers="mdpi-v4"
+                type="drawable" />
+            <file
+                name="span_1"
+                path="/home/tomer/Desktop/rosenpin-assist-me-alpha-e6d20fc87524/floatingMenu/src/main/res/drawable-mdpi/span_1.png"
+                qualifiers="mdpi-v4"
+                type="drawable" />
+            <file
+                name="span_3"
+                path="/home/tomer/Desktop/rosenpin-assist-me-alpha-e6d20fc87524/floatingMenu/src/main/res/drawable-mdpi/span_3.png"
+                qualifiers="mdpi-v4"
+                type="drawable" />
+            <file
+                name="span_2"
+                path="/home/tomer/Desktop/rosenpin-assist-me-alpha-e6d20fc87524/floatingMenu/src/main/res/drawable-hdpi/span_2.png"
+                qualifiers="hdpi-v4"
+                type="drawable" />
+            <file
+                name="span_1"
+                path="/home/tomer/Desktop/rosenpin-assist-me-alpha-e6d20fc87524/floatingMenu/src/main/res/drawable-hdpi/span_1.png"
+                qualifiers="hdpi-v4"
+                type="drawable" />
+            <file
+                name="span_3"
+                path="/home/tomer/Desktop/rosenpin-assist-me-alpha-e6d20fc87524/floatingMenu/src/main/res/drawable-hdpi/span_3.png"
+                qualifiers="hdpi-v4"
+                type="drawable" />
+            <file
+                path="/home/tomer/Desktop/rosenpin-assist-me-alpha-e6d20fc87524/floatingMenu/src/main/res/values-v14/styles.xml"
+                qualifiers="v14" >
+
+                <style
+                    name="AppBaseTheme"
+                    parent="android:Theme.Holo.Light.DarkActionBar" >
+
+                    <!-- API 14 theme customizations can go here. -->
+                </style>
+            </file>
+            <file
+                name="span_2"
+                path="/home/tomer/Desktop/rosenpin-assist-me-alpha-e6d20fc87524/floatingMenu/src/main/res/drawable-xhdpi/span_2.png"
+                qualifiers="xhdpi-v4"
+                type="drawable" />
+            <file
+                name="floating2"
+                path="/home/tomer/Desktop/rosenpin-assist-me-alpha-e6d20fc87524/floatingMenu/src/main/res/drawable-xhdpi/floating2.png"
+                qualifiers="xhdpi-v4"
+                type="drawable" />
+            <file
+                name="span_1"
+                path="/home/tomer/Desktop/rosenpin-assist-me-alpha-e6d20fc87524/floatingMenu/src/main/res/drawable-xhdpi/span_1.png"
+                qualifiers="xhdpi-v4"
+                type="drawable" />
+            <file
+                name="span_3"
+                path="/home/tomer/Desktop/rosenpin-assist-me-alpha-e6d20fc87524/floatingMenu/src/main/res/drawable-xhdpi/span_3.png"
+                qualifiers="xhdpi-v4"
+                type="drawable" />
+            <file
+                name="floating4"
+                path="/home/tomer/Desktop/rosenpin-assist-me-alpha-e6d20fc87524/floatingMenu/src/main/res/drawable-xhdpi/floating4.png"
+                qualifiers="xhdpi-v4"
+                type="drawable" />
+            <file
+                name="floating3"
+                path="/home/tomer/Desktop/rosenpin-assist-me-alpha-e6d20fc87524/floatingMenu/src/main/res/drawable-xhdpi/floating3.png"
+                qualifiers="xhdpi-v4"
+                type="drawable" />
+            <file
+                name="floating5"
+                path="/home/tomer/Desktop/rosenpin-assist-me-alpha-e6d20fc87524/floatingMenu/src/main/res/drawable-xhdpi/floating5.png"
+                qualifiers="xhdpi-v4"
+                type="drawable" />
+            <file
+                path="/home/tomer/Desktop/rosenpin-assist-me-alpha-e6d20fc87524/floatingMenu/src/main/res/values-v11/styles.xml"
+                qualifiers="v11" >
+
+                <style
+                    name="AppBaseTheme"
+                    parent="android:Theme.Holo.Light" >
+
+                    <!-- API 11 theme customizations can go here. -->
+                </style>
+            </file>
+            <file
+                name="github_logo"
+                path="/home/tomer/Desktop/rosenpin-assist-me-alpha-e6d20fc87524/floatingMenu/src/main/res/drawable-xxhdpi/github_logo.png"
+                qualifiers="xxhdpi-v4"
+                type="drawable" />
+            <file
+                path="/home/tomer/Desktop/rosenpin-assist-me-alpha-e6d20fc87524/floatingMenu/src/main/res/values-sw720dp-land/dimens.xml"
+                qualifiers="sw720dp-land-v13" >
+                <dimen name="activity_horizontal_margin" >128dp
+                </dimen>
+            </file>
+            <file
+                path="/home/tomer/Desktop/rosenpin-assist-me-alpha-e6d20fc87524/floatingMenu/src/main/res/values/styles.xml"
+                qualifiers="" >
+
+                <style
+                    name="AppBaseTheme"
+                    parent="android:Theme.Light" >
+
+                    <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+                    -->
+                </style>
+
+                <style
+                    name="AppTheme"
+                    parent="AppBaseTheme" >
+
+                    <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+                </style>
+            </file>
+            <file
+                path="/home/tomer/Desktop/rosenpin-assist-me-alpha-e6d20fc87524/floatingMenu/src/main/res/values/strings.xml"
+                qualifiers="" >
+                <string name="action_settings" >Settings
+                </string>
+                <string name="title_activity_configurations" >Configurations
+                </string>
+                <string name="app_name" >FloatingLauncher
+                </string>
+                <string name="hello_world" >Hello world!
+                </string>
+            </file>
+            <file
+                path="/home/tomer/Desktop/rosenpin-assist-me-alpha-e6d20fc87524/floatingMenu/src/main/res/values/dimens.xml"
+                qualifiers="" >
+                <dimen name="activity_horizontal_margin" >16dp
+                </dimen>
+                <dimen name="activity_vertical_margin" >16dp
+                </dimen>
+            </file>
+            <file
+                name="configurations"
+                path="/home/tomer/Desktop/rosenpin-assist-me-alpha-e6d20fc87524/floatingMenu/src/main/res/menu/configurations.xml"
+                qualifiers=""
+                type="menu" />
+            <file
+                name="main"
+                path="/home/tomer/Desktop/rosenpin-assist-me-alpha-e6d20fc87524/floatingMenu/src/main/res/menu/main.xml"
+                qualifiers=""
+                type="menu" />
+        </source>
+        <source path="/home/tomer/Desktop/rosenpin-assist-me-alpha-e6d20fc87524/floatingMenu/build/generated/res/rs/debug" />
+        <source path="/home/tomer/Desktop/rosenpin-assist-me-alpha-e6d20fc87524/floatingMenu/build/generated/res/generated/debug" />
+    </dataSet>
+    <dataSet config="debug" >
+        <source path="/home/tomer/Desktop/rosenpin-assist-me-alpha-e6d20fc87524/floatingMenu/src/debug/res" />
+    </dataSet>
+
+</merger>

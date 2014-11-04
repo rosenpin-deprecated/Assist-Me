@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <ListPreference android:title="Language"
+        android:summary="@string/pickLang"
+        android:key="prefLang"
+        android:defaultValue="Bottom to top"
+        android:entries="@array/language"
+        android:entryValues="@array/language_values"/>
+    <CheckBoxPreference
+        android:title="@string/listenOnStart"
+        android:widgetLayout="@layout/custom_preferences_checkbox"
+        android:defaultValue="false"
+        android:summary="Make Assist-Me listen on launch"
+        android:key="prefListenStart"/>
+    <CheckBoxPreference
+        android:widgetLayout="@layout/custom_preferences_checkbox"
+        android:title="@string/greetMeOnStart"
+        android:defaultValue="true"
+        android:summary="Assist-Me will greet you on launch"
+        android:key="prefGreetStart"/>
+    <ListPreference android:title="Temperature unit"
+        android:summary="@string/tempUnit"
+        android:key="prefUnit"
+        android:defaultValue="Celsius"
+        android:entries="@array/unit"
+        android:entryValues="@array/unit_values"/>
+    <CheckBoxPreference
+        android:widgetLayout="@layout/custom_preferences_checkbox"
+        android:title="Bitch mode"
+        android:defaultValue="false"
+        android:summary="Assist-Me will make you her bitch (only allowed if you are over 13 years old)"
+        android:key="prefBitch"/>
+    <CheckBoxPreference
+        android:widgetLayout="@layout/custom_preferences_checkbox"
+        android:title="Wake up on phrase (experimental)"
+        android:defaultValue="false"
+        android:summary="Assist me will start listening to you when you say the wake up phrase"
+        android:key="prefWake"/>
+
+</PreferenceScreen>

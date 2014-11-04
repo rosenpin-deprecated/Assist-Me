@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <CheckBoxPreference
+        android:title="Answer after speak"
+        android:summary="Assist-Me will speak back and answer you"
+        android:key="prefAnswer"
+        android:widgetLayout="@layout/custom_preferences_checkbox"
+        android:defaultValue="true"/>
+    <ListPreference android:title="Assistant accent"
+        android:summary="What is your preferred accent"
+        android:key="prefAccent"
+        android:defaultValue="US"
+        android:entries="@array/accent"
+        android:entryValues="@array/accent_values"/>
+    <com.preferences.PreferencesSeekBar
+        android:key="prefPitch"
+        android:title="Assistant voice pitch"
+        android:summary="How high do you want the assistant to speak?"
+        android:defaultValue="0"
+        android:max="100"
+        />
+    <EditTextPreference
+        android:title="Assistant name"
+        android:summary="What's the assistant name"
+        android:key="prefAssistantName"/>
+
+    <EditTextPreference
+        android:title="Your name"
+        android:summary="What's your name"
+        android:key="prefUsername"/>
+</PreferenceScreen>
